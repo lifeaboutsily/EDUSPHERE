@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT material</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="file1.png">
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            background-color:#FAFAD2;
+            text-shadow: 2px 3px 5px orange;
+        }
+        #container1{
+            background-color: #FAFAD2;
+            text-shadow: 2px 3px 5px orange;
+        }
+        #container2{
+            background-color: #FAFAD2;
+            text-shadow: 2px 3px 5px orange;
+        }
+        #container3{
+            background-color: #FAFAD2;
+            text-shadow: 2px 3px 5px orange;
+        }
+        #container h1,h2{
+            text-decoration: underline;
+        }
+        .grid{
+            display: grid;
+            /* grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr; */
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-rows: 20fr 20fr 20fr 20fr 20fr;
+            gap: 5px;
+
+        }
+        .box{
+            background-color:lightcyan;
+            border: 2px solid black;
+            font-size: 25px;
+            border-radius: 15px;
+            box-shadow: 2px 3px #cece15;
+        }
+        #container .uiet{
+            margin: 5px 109px;
+            font-size: 26px;
+            font-weight: bold;
+            font-family: baloo bhai,cursive;
+            
+        }
+        .grid1{
+            display: grid;
+            /* grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr; */
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-rows: 20fr 20fr 20fr 20fr 20fr;
+            gap: 15px;
+
+        }
+        .box1{
+            background-color: lightcyan;
+            border: 2px solid black;
+            font-size: 25px;
+            border-radius: 15px;
+            box-shadow: 2px 3px #cece15;
+
+        }
+        #container1 .uiet1{
+            margin: 5px 109px;
+            font-size: 26px;
+            font-weight: bold;
+            font-family: baloo bhai,cursive;
+        }
+
+        .grid2{
+            display: grid;
+            /* gri                             d-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr; */
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-rows: 20fr 20fr 20fr 20fr 20fr;
+            gap: 5px;
+
+        }
+        .box2{
+            background-color: lightcyan;
+            border: 2px solid black;
+            font-size: 25px;
+            border-radius: 15px;
+            box-shadow: 2px 3px #cece15;
+        }
+        #container2 .uiet2{
+            margin: 5px 109px;
+            font-size: 26px;
+            font-weight: bold;
+            font-family: baloo bhai,cursive;
+        }
+
+        .grid3{
+            display: grid;
+            /* grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr; */
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-rows: 20fr 20fr 20fr 20fr 20fr;
+            gap: 5px;
+
+        }
+        .box3{
+            background-color:lightcyan;
+            border: 2px solid black;
+            font-size: 25px;
+            border-radius: 15px;
+            box-shadow: 2px 3px #cece15;
+        }
+        #container3 .uiet3{
+            margin: 5px 109px;
+            font-size: 26px;
+            font-weight: bold;
+            font-family: baloo bhai,cursive;
+        }
+        /*  start nav bar */
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+ 
+}
+
+/* .logo {
+  color: var(--color-white);
+  font-size: 30px;
+  font-family: baloo bhai,cursive;
+} */
+.logo1 {
+    width: 8rem;
+    padding: 2px;
+    margin: -56px;
+  }
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: hsl(189.31deg 46.53% 59.95%);
+  height: 80px;
+  width: 103%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 8px 125px 2px 34px;
+  /* text-align: center; */
+
+  position: relative;
+}
+.menu-bar ul li:hover{
+    color: black;
+    font-size: 45px;
+    font-family: serif;
+    
+}
+
+.menu-bar ul li a {
+  font-size: 22px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: hsl(189.31deg 46.53% 59.95%);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+  
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color:  hsl(189.31deg 46.53% 59.95%);
+}
+       
+    </style>
+</head>
+<body>
+   
+ <div class="menu-bar">
+    <img src="file1.png" class="logo1">
+        <!-- <h1 class="logo">Edu<span>Sphere</span></h1> -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          
+          <li><a href="#">Service <i class="fas fa-caret-down"></i></a>
+  
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="#Lectures">Lectures <i class="fas fa-caret-right"></i></a>
+                      <div class="dropdown-menu-1">
+                          <ul>
+                            <li><a href="#container">Sem-1</a></li>
+                            <li><a href="#container1">Sem-2</a></li>
+                            <li><a href="#container2">Sem-3</a></li>
+                            <li><a href="#container3">Sem-4</a></li>
+                          </ul>
+                        </div>
+                  </li>
+                    <!-- <li><a href="#">Notes</a></li> -->
+                    <!-- <li>
+                      <a href="#">Team </a></li>
+                    <li><a href="#">FAQ</a></li> -->
+                  </ul>
+                </div>
+          
+        </ul>
+      </div>
+                             <!-- sem-1 -->
+    <div id="container">
+        <center><h1>Content for IT branch</h1></center>
+        <center><h2>Semester : 1st</h2></center>
+        <pre class ="uiet">                Lectures                                                                           E-Notes                                                                                            PYQs </pre>
+        
+    <div class="grid">
+        
+        <div class="box">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ASP &nbsp X02<br>
+              Course Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Quantum Physics<hr>
+              <iframe width="500" height="300" src=https://www.youtube.com/embed/HRFkQoKojh0?autoplay=1&loop=1&mute=1&list=PLNr6lMkF6EGBC0wcanyoMmlGIvTB5GVmg></iframe>
+              <center><a href = "https://youtube.com/playlist?list=PLNr6lMkF6EGBC0wcanyoMmlGIvTB5GVmg&si=qD2iCop-wOpx6Qgk" target="_blank">Click here</a></center>
+              
+        </div>
+        <div class="box">
+            <embed src="quantum physics.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;" >
+        </div>
+        <div class="box">
+            <embed src="quantumpyq.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;" >
+        </div>
+        <div class="box">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ASM &nbsp 101<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Calculus<hr>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/lxksRct1QOY?list=PLVCBPCYGv7bC1JwOGH-X0FS-jTI4WRbI1"></iframe>
+        <a href = "https://youtube.com/playlist?list=PLVCBPCYGv7bC1JwOGH-X0FS-jTI4WRbI1&si=-BDZOkBJUjMixpBF" target="_blank">playlist1 &nbsp</a>
+        <a href = "https://youtube.com/playlist?list=PLVCBPCYGv7bDiiZ5fP856_EGNyf34avaH&si=m0fMGVKyBWDx9RpV" target="_blank">playlist2 &nbsp</a>
+        <a href = "https://youtube.com/playlist?list=PLVCBPCYGv7bDWb3v_WfVgRKsBe5NVHVJY&si=4edNSVyvVDC3hViM" target="_blank">playlist3 &nbsp</a>
+        <a href = "https://youtube.com/playlist?list=PLVCBPCYGv7bA4lGJO1tUEKqB1thieCcLc&si=gvmhQR0NqpI0w-Cs" target="_blank">playlist4 &nbsp</a>
+    </div>
+        <div class="box">
+            <embed src="Calculus Notes, Semester 1.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+        <div class="box">
+            <embed src="maths1.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;">
+        </div>
+        <div class="box">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp HSMC &nbsp X51<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp  Proffesional Communication<hr>
+            <iframe width="500" height="300" src=https://www.youtube.com/embed/UudSwjqFdNM?list=PL9RcWoqXmzaKWxaNoDhW4O1kA0hK9AYys></iframe>
+            <center><a href = "https://youtube.com/playlist?list=PL9RcWoqXmzaKWxaNoDhW4O1kA0hK9AYys&si=UYkrPV7FiuVt5HWz" target="_blank">Click here</a></center></div>
+        <div class="box">
+            <embed src="eng.notes.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;">
+                <center><a href="https://drive.google.com/drive/folders/10pZH0FXWGMCxb3NmJMn5fbS6_Dhhwz2c" target="_blank">Click here</a></center>
+        </div>
+        <div class="box">
+            <embed src="professional comm 1.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+        <div class="box">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ESC &nbsp X01<br>
+            Course Title &nbsp &nbsp &nbsp  Programming Fundamdamental<hr>
+            <iframe width="500" height="300" src=https://www.youtube.com/embed/7Dh73z3icd8?list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR></iframe>
+            <center><a href = "https://youtube.com/playlist?list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR&si=0vdmAQNux8awImC_" target="_blank">Click here</a></center></div>
+        <div class="box">
+            <embed src="C_Complete_Notes.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;">
+        </div>
+        <div class="box">
+            <embed src="cpyq.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+        <div class="box">ourse Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ESC &nbsp X01<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Workshop<hr>
+            <iframe width="500" height="300" src=https://www.youtube.com/embed/Ft7zxW6Vsls?list=PLJu6FW_RN3r69JZbDBMNtBICM8NbmtplZ></iframe>
+            <center><a href = "https://youtube.com/playlist?list=PLJu6FW_RN3r69JZbDBMNtBICM8NbmtplZ&si=bvBULjh6E2Pa-O3u_" target="_blank">Click here</a></center></div>
+        <div class="box">
+            <embed src="workshop file 1.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+        <div class="box"><center>NO PYQs</center>
+            
+        </div>
+       
+    </div>
+    </div>
+    <!-- 2nd semester -->
+
+
+    <div id="container1">
+        <center><h2>Semester : 2nd</h2></center>
+        <pre class ="uiet1">                 Lectures                                                                                E-Notes                                                                                 PYQs </pre>
+        
+    <div class="grid1">
+        
+        <div class="box1">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ASC &nbsp X01<br>
+              Course Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Applied Chemistry<hr>
+              <iframe width="500" height="300" src=https://www.youtube.com/embed/JaLcEByeNrY?list=PLW1Y7Rfg4m8Jhs-s_VfYWgWzwTqYUvxJb></iframe>
+              <center><a href = "https://youtube.com/playlist?list=PLW1Y7Rfg4m8Jhs-s_VfYWgWzwTqYUvxJb&si=Wch7TUTyzHzqgthz" target="_blank">Click here</a></center>
+        </div>
+        <div class="box1">
+            <embed src="sterochemistry.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px;">
+                <center><a href="https://drive.google.com/drive/folders/1-Ca6tM23mIKCi5YVUDr4JcAcTvNN9Z8q" target="_blank">Click here</a></center>
+        </div>
+        <div class="box1">
+            <embed src="chemistry 2.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+        <div class="box1">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ASM &nbsp 201<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp Differnetial Eq. and Transforms<hr>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/JtReno5_GkI?list=PLVCBPCYGv7bB7ZxAx2rT0Ln2G6ad4ME-1"></iframe>
+        <a href = "https://youtube.com/playlist?list=PLVCBPCYGv7bB7ZxAx2rT0Ln2G6ad4ME-1&si=LDKH3TDVvBKOaRAU" target="_blank">link1 &nbsp &nbsp &nbsp</a>
+        <a href = "https://youtube.com/playlist?list=PLVCBPCYGv7bB5mBCyEIBxFnl3OLW0Vmu1&si=ORIk_73OzgaqR649" target="_blank">link2 &nbsp &nbsp &nbsp</a>
+        <a href = "https://youtube.com/playlist?list=PLhSp9OSVmeyJ5N-JUEZj7uS6IAT9a79nD&si=_YkD79VR5dxtuBVd" target="_blank">link3 &nbsp &nbsp &nbsp</a>
+        <a href = "https://youtube.com/playlist?list=PLhSp9OSVmeyLke5_cby8i8ZhK8FHpw3qs&si=3oCuLlAz7trXyoRY" target="_blank">link4 &nbsp &nbsp &nbsp</a>
+        <a href = "https://youtube.com/playlist?list=PLhSp9OSVmeyITz_e6F9YiyongjaCryasK&si=YgUFNjkTuC6aRyK2" target="_blank">link5 &nbsp &nbsp &nbsp</a>
+        <a href = "https://youtube.com/playlist?list=PLhSp9OSVmeyIYLVvSJ8m6KvVwJs7M9QBm&si=NHnObTtJskI-S9mx" target="_blank">link6 &nbsp &nbsp &nbsp</a>
+        <a href = "https://youtube.com/playlist?list=PLhSp9OSVmeyJoNnAqghUK-Lit3qBgfa6o&si=2W6n1epoSXgatgAi" target="_blank">link7 &nbsp &nbsp &nbsp</a>
+        <a href = "https://youtube.com/playlist?list=PLhSp9OSVmeyJCwFXRDW8KmDlBFGRAxnAu&si=kj-xRtCvZ_gIBP6a" target="_blank">link8 &nbsp &nbsp &nbsp</a>
+    </div>
+        <div class="box1">
+            <embed src="maths.pdf" type="application/pdf"width="500" height="400"style="border-radius: 15px ;">
+                <center><a href="https://drive.google.com/drive/folders/1-qYZDXsgthy2iBnnvvU5kT8qu0FrE0xf" target="blank">click here</a></center>
+        </div>
+        <div class="box1">
+            <embed src="maths2.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+        <div class="box1">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp EEC &nbsp X01<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp BEEE<hr>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/Vd2UJiIPbag?list=PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc"></iframe>
+            <a href = "https://youtube.com/playlist?list=PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc&si=3fQAlo2vkXHSx1uO" target="_blank">Click here1 &nbsp &nbsp</a>
+            <a href = "https://youtube.com/playlist?list=PL3qvHcrYGy1uF5KAGntUITTJ85Dm3Dtdy&si=YNMnved-pys1qpis" target="_blank">Click here2 &nbsp &nbsp</a>
+            <a href = "https://youtube.com/playlist?list=PL4K9r9dYCOors6MRFwoIe9_iBzSzUp2Zi&si=baJrZ4Tb1eSsXp_2" target="_blank">Click here3 &nbsp &nbsp</a>
+        
+        </div>
+        <div class="box1">
+            <embed src="DC and AC.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px;">
+               <center> <a href="https://drive.google.com/drive/folders/11JxlKEeRa0FrIUF7vc12jl7ApheVI5ex" target="blank">click here</a></center>
+        </div>
+        <div class="box1">
+            <embed src="BEEE 2.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;">
+            </div>
+        <div class="box1">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ESC &nbsp X04<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Engineering Graphics<hr>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/uojN7SOHPBw"></iframe>
+            <a href = "https://youtube.com/playlist?list=PLDN15nk5uLiBDV2tAMDlR1snIX8WdTVYR&si=_4WxEqr340Crh4Wa" target="_blank">Click here1 &nbsp &nbsp &nbsp</a>
+            <a href = "https://youtube.com/playlist?list=PLDN15nk5uLiC9wFOTiDp8ekWAf40BwSct&si=2mKZ3pbVNbgxe8vr" target="_blank">Click here2 &nbsp &nbsp &nbsp</a>
+            <a href = "https://youtube.com/playlist?list=PLDN15nk5uLiBVR22X01vcnvVCuQIklXGx&si=rPxysTMd9Pjafizj" target="_blank">Click here3 &nbsp &nbsp &nbsp</a>
+            <a href = "https://youtube.com/playlist?list=PLDN15nk5uLiA9qy-OWuoEYoXsu7lsSaE9&si=okRE-pnHrVA00kdP" target="_blank">Click here4 &nbsp &nbsp &nbsp</a>
+            <a href = "https://youtube.com/playlist?list=PLDN15nk5uLiBrAkdOhEvkmVPs2UtwfGao&si=9MvYLn62g0vLA9ky" target="_blank">Click here5 &nbsp &nbsp &nbsp</a>
+            <a href = "https://youtube.com/playlist?list=PLDN15nk5uLiCf-raL06kSCeqR8h61eYIC&si=5cD_E6dtbxHDNBY9" target="_blank">Click here6 &nbsp &nbsp &nbsp</a>
+        
+        </div>
+        <div class="box1">
+            <embed src="Engineering-Drawing.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+        <div class="box1">
+            <embed src="EG 2.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;">
+        </div>
+        <div class="box1">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ITC &nbsp 201<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp OOPS Using C++<hr>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/j8nAHeVKL08?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL"></iframe>
+            <center><a href = "https://youtube.com/playlist?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL&si=MKk7Q_uppH6_nbYj" target="_blank">Click here</a></center>
+        </div>
+        <div class="box1">
+            <embed src="C++ OOPS.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+        <div class="box1">
+            <embed src="oops 2.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;">
+        </div>
+    </div>
+    </div>
+
+    <!-- semester 3rd -->
+
+
+    <div id="container2">
+        <center><h2>Semester : 3rd</h2></center>
+        <pre class ="uiet2">                  Lectures                                                                              E-Notes                                                                            PYQs </pre>
+        
+    <div class="grid2">
+        
+        <div class="box2">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ASM &nbsp 301<br>
+              Course Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Linear alg. and Prob. theory<hr>
+              <iframe width="500" height=300" src="https://www.youtube.com/embed/1XlT3Y2oyAU"></iframe>
+    <a href = "https://youtube.com/playlist?list=PLU6SqdYcYsfI7Ebw_j-Vy8YKHdbHKP9am&si=nPJtivBSm3X-jzbQ" target="_blank">Click here1 &nbsp &nbsp</a>
+    <a href = "https://youtube.com/playlist?list=PLdM-WZokR4tZo7d7evvMvnqshgEh02hNY&si=p8JYx-5qSE34FlGW" target="_blank">Click here2 &nbsp &nbsp</a>
+    <a href = "https://youtube.com/playlist?list=PLdM-WZokR4taLvoJPvfHwF8m0Q1K6Qvmz&si=Yf4vldhZkAWNDPu_" target="_blank">Click here3</a>
+        </div>
+        <div class="box2">
+            <embed src="LA notes.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+                <center><a href="https://drive.google.com/drive/folders/14GYMUbjvLM4DbmJhUhM5mxC9ut6zV4mk">Click here</a></center>
+        </div>
+        <div class="box2">
+            <embed src="linear algebra and probability.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;">
+        </div>
+        <div class="box2">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PCIT &nbsp 301<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Data Structures <hr>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/WQoB2z67hvY"></iframe>
+        <center><a href = "https://youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA&si=iKN3JCtRznNS8_jf" target="_blank">Click here</a></center>
+    </div>
+        <div class="box2">This is box-5</div>
+        <div class="box2">
+            <embed src="data structures.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;">
+        </div>
+        <div class="box2">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ESC &nbsp 301<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Digital Electronics<hr>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/M0mx8S05v60?list=PLBlnK6fEyqRjMH3mWf6kwqiTbT798eAOm"></iframe>
+            <center><a href = "https://youtube.com/playlist?list=PLBlnK6fEyqRjMH3mWf6kwqiTbT798eAOm&si=xWrO9b_iXwoVqRR2" target="_blank">Click here</a></center>
+        </div>
+        <div class="box2">This is box-8</div>
+        <div class="box2">
+            <embed src="digital electronics.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;">
+        </div>
+        <div class="box2">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PCIT &nbsp 304<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Computer Arch. and Org.<hr>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/L9X7XXfHYdU?list=PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX"></iframe>
+            <center><a href = "https://youtube.com/playlist?list=PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX&si=5Ix5SzACJiP_xcCz" target="_blank">Click here</a></center>
+        
+        </div>
+        <div class="box2">This is box-12</div>
+        <div class="box2">
+            <embed src="computer arch..pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;">
+        </div>
+        <div class="box2">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PCIT &nbsp 303<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp Database Management System<hr>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/kBdlM6hNDAE"></iframe>
+            <center><a href = "https://youtube.com/playlist?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y&si=9_vsHSOjDyWAXbNH" target="_blank">Click here</a></center>
+        </div>
+        <div class="box2">This is box-14</div>
+        <div class="box2">
+            <embed src="DBMS.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+    </div>
+    </div>
+
+    <!-- semester 4th -->
+    <div id="container3">
+        <center><h2>Semester : 4th</h2></center>
+        <pre class ="uiet3">                  Lectures                                                                               E-Notes                                                                           PYQs </pre>
+        
+    <div class="grid3">
+        
+        <div class="box3">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp HSMC-401a<br>
+              Course Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Economics<hr>
+              <iframe width="500" height="300" src="https://www.youtube.com/embed/qsMRwgDsig8?list=PLuoheP7tfLlPm14pOfmklxtl2ax5jBkCX"></iframe>
+              <center><a href = "https://youtube.com/playlist?list=PLaAhQ2ofZZRC1OFxHoa8qGyFHDgk7PyUN&si=YPLWHY4KruRMduCo" target="_blank">Click here</a></center>
+        </div>
+        <div class="box3">
+            <embed src="eco.notes.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;">
+        </div>
+        <div class="box3">
+            <embed src="eco.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+        <div class="box3">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ASM &nbsp 401<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Discrete Structures <hr>
+            <iframe width="500" height="200" src="https://www.youtube.com/embed/fTG9XefIBC8?list=PLq76ktDFTJEKPnC7dWNEOYHytKvrQ4en0"></iframe>
+        <center><a href = "https://youtube.com/playlist?list=PLq76ktDFTJEKPnC7dWNEOYHytKvrQ4en0&si=TEo5ERZnPIuo2qdX" target="_blank">Click here</a></center>
+    </div>
+        <div class="box3">
+            <embed src="discretenotes.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+        <div class="box3">
+            <embed src="discrete.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;">
+        </div>
+        <div class="box3">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PCIT &nbsp 402<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Computer Networks<hr>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/VwN91x5i25g?list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx"></iframe>
+            <a href = "https://youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&si=bRgpY5VVYO2JAc3W" target="_blank">Click here1 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</a>
+            <a href = "https://youtube.com/playlist?list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx&si=a0_pHz7lFJmpyrNf" target="_blank">Click here2 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</a>
+           
+        
+        </div>
+        <div class="box3">
+            <embed src="cnnotes.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;">
+        </div>
+        <div class="box3">
+            <embed src="CNPYQ.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+        <div class="box3">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PCIT &nbsp 401<br>
+            Course Title &nbsp &nbsp &nbsp Micro. and Ass. language Prog.<hr>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/RP2sWt_oAWo?list=PLgwJf8NK-2e5vHwmowy_kGtjq9Ih0FzwN"></iframe>
+            <center><a href = "https://youtube.com/playlist?list=PLgwJf8NK-2e5vHwmowy_kGtjq9Ih0FzwN&si=-NJ9Ecgk6AroX9OV" target="_blank">Click here</a></center>
+            
+        
+        </div>
+        <div class="box3">
+            <embed src="mp.pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+        <div class="box3">
+            <embed src="micro.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;">
+        </div>
+        <div class="box3">Course Code &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PCIT &nbsp 403<br>
+            Course Title &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp Operating System<hr>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/bkSWJJZNgf8?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p"></iframe>
+            <center><a href = "https://youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p&si=q1ZhTHjikqvun0EI" target="_blank">Click here</a></center>
+        </div>
+        <div class="box3">
+            <embed src="OS Notes .pdf" type="application/pdf" width="500" height="400"style="border-radius: 15px ;" >
+        </div>
+        <div class="box3">
+            <embed src="os.pdf" type="application/pdf" width="500" height="400" style="border-radius: 15px ;">
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>

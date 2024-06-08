@@ -1,0 +1,163 @@
+
+styles.css
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' , sans-serif;
+}
+
+.ram{
+    
+    background: url(about.jpg) ,black ;
+    background-size: 10%;
+    
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position-y: bottom;
+    background-position-x: 130%; 
+    height: 738px;
+    
+}
+
+.container1{
+    height: 80%;
+    width: 42%;
+    position: relative;
+    left: 28.5%;
+    top: 60.5%;
+    bottom: -283px;
+    transform: translate(-50% , -50%);
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container1 h1{
+    font-weight: 500;
+    font-size: 4.5em;
+    color: white;
+    
+  }
+  
+  .content1{
+    height: inherit;
+    width: 80%;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 30%;
+  
+  }
+  
+  .content1 p{
+    width: 80%;
+    color: white;
+    line-height: 2em;
+    font-size: 14px;
+  }
+  
+  .social{
+    font-size: 3em;
+    color: white;
+    margin-top: 50px;
+  }
+  
+  
+  .social i{
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  
+  .social i:hover{
+    font-size: 6rem;
+  }
+  
+  
+  .instagram:hover{
+    color: #dd2a7b;
+  }
+  
+  .twitter:hover{
+    color: #1da1f2;
+  }
+  
+  .linkedin:hover{
+    color: #0077b5;
+  }
+  
+  .youtube:hover{
+    color:#e62117;
+}
+/* Media queries for larger screens */
+@media (min-width: 600px) {
+    .container1 h1 {
+        font-size: 3em;
+    }
+
+    .content1 p {
+        line-height: 1.75em;
+    }
+}
+
+@media (min-width: 768px) {
+    .container1 {
+        width: 70%;
+    }
+
+    .container1 h1 {
+        font-size: 3.5em;
+    }
+
+    .social {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 992px) {
+    .ram {
+        background-size: 40%;
+        background-position-y: top;
+        background-position-x: 100%;
+    }
+
+    .container1 {
+        width: 50%;
+    }
+
+    .container1 h1 {
+        font-size: 4em;
+    }
+
+    .content1 p {
+        width: 80%;
+        line-height: 2em;
+    }
+
+    .social {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container1 {
+        width: 42%;
+    }
+
+    .container1 h1 {
+        font-size: 4.5em;
+    }
+
+    .content1 {
+        width: 80%;
+    }
+
+    .social {
+        font-size: 3em;
+    }
+}
